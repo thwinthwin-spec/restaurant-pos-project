@@ -99,6 +99,10 @@ npm start
 
 Open <http://localhost:5000>. For a separately hosted frontend, set `VITE_API_URL` to the API base URL (ending in `/api`) **before** running `npm run build`, and allow that frontend origin with `CLIENT_ORIGIN`.
 
+## Hosting / public deployment
+
+See [DEPLOY.md](DEPLOY.md) for a step-by-step Render + MongoDB Atlas deployment. The Express service serves both `/api` and the built React app, so **one Web Service is enough**. `render.yaml` and `.env.example` templates are included; real secrets stay in the hosting dashboard and are never committed.
+
 ## Docker Compose
 
 1. Create a root `.env` file with a strong secret:
