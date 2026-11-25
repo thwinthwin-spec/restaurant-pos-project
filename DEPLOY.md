@@ -1,4 +1,6 @@
-# Deploying Table & Thyme POS
+# Deploying Table & Thyme POS (Render)
+
+> Prefer AWS? See [DEPLOY-AWS.md](DEPLOY-AWS.md) for ECS Express Mode + ECR + SSM Parameter Store. AWS App Runner is closed to new customers, so that guide uses ECS Express Mode instead.
 
 The Express server already serves the built React app from `client/dist`, so the whole project deploys as **one Render Web Service**. No separate frontend host, no CORS dance, and no `VITE_API_URL` needed.
 

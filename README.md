@@ -101,7 +101,12 @@ Open <http://localhost:5000>. For a separately hosted frontend, set `VITE_API_UR
 
 ## Hosting / public deployment
 
-See [DEPLOY.md](DEPLOY.md) for a step-by-step Render + MongoDB Atlas deployment. The Express service serves both `/api` and the built React app, so **one Web Service is enough**. `render.yaml` and `.env.example` templates are included; real secrets stay in the hosting dashboard and are never committed.
+Two ready-to-use options:
+
+- [DEPLOY.md](DEPLOY.md) — Render + MongoDB Atlas. One Web Service, simplest setup.
+- [DEPLOY-AWS.md](DEPLOY-AWS.md) — AWS ECS Express Mode + ECR + SSM Parameter Store + MongoDB Atlas. GitHub Actions deploys the existing `Dockerfile` on every push to `main`.
+
+The Express server serves both `/api` and the built React app, so either option needs only **one running service**. Real secrets stay in the hosting provider / AWS SSM and are never committed.
 
 ## Docker Compose
 
