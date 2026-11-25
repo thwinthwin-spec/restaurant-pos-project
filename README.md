@@ -2,19 +2,19 @@
 
 A production-style MERN point-of-sale for restaurants. It handles daily service, menu and staff administration, kitchen status, sales reports, receipts, and an audit trail. Prices and totals are recorded in **Myanmar Kyat (MMK)** and receipts can be printed from the browser — no receipt printer or payment gateway integration is required.
 
-## အကျဉ်း — ဒီ project က ဘာလဲ? (At a glance)
+## At a glance — what is this project?
 
 | | |
 | --- | --- |
 | **Project** | Table & Thyme — Restaurant POS |
-| **အမျိုးအစား** | Full-stack MERN web app — စားသောက်ဆိုင်အတွက် POS + kitchen board + reports စနစ် |
-| **ဘာလုပ်ပေးလဲ** | Menu ရှာဖွေ + cart, dine-in/takeaway/delivery, Cash/KPay ငွေပေးချေ, admin က payment အတည်ပြု, မီးဖိုချောင် status, receipt ပုံနှိပ်, reports + CSV, audit log |
+| **Type** | Full-stack MERN web app — POS + kitchen board + reports for a restaurant |
+| **What it does** | Searchable menu + cart, dine-in/takeaway/delivery, Cash/KPay payments, admin payment confirmation, kitchen status, printable receipts, reports + CSV, audit log |
 | **Tech** | React + Vite · Node.js + Express + Mongoose + Zod · MongoDB · httpOnly JWT + CSRF |
 | **Ports** | Website `5173` · API `5000` |
-| **Admin account** | ပထမဆုံး run မှာ admin ကိုယ်တိုင် ဖန်တီးရပါတယ် (`npm run seed` က menu/order နမူနာပဲ ထည့်ပေးပါတယ်) |
-| **အခြေအနေ** | Seeded demo data ပါတယ်။ ဈေးနှုန်းအားလုံး **MMK**။ တကယ့် payment gateway မပါပါ။ |
+| **Admin account** | Create the first admin on first run (`npm run seed` only adds sample menu/orders) |
+| **Status** | Seeded demo data. All prices in **MMK**. No real payment gateway. |
 
-**In short (English):** A restaurant point-of-sale app. Cashiers build orders (Cash or KPay) and print MMK receipts; orders move through a kitchen board and an admin confirms payment before sales count in reports. Includes menu/staff administration, reports with CSV export and an activity log. Seeded demo data, no real payment gateway.
+In short: A restaurant point-of-sale app. Cashiers build orders (Cash or KPay) and print MMK receipts; orders move through a kitchen board and an admin confirms payment before sales count in reports. Includes menu/staff administration, reports with CSV export and an activity log. Seeded demo data, no real payment gateway.
 
 ## Highlights
 
