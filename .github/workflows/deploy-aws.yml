@@ -18,6 +18,7 @@ env:
 jobs:
   deploy:
     name: Build and deploy
+    if: ${{ vars.AWS_REGION != '' && vars.AWS_GITHUB_ROLE_ARN != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
